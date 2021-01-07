@@ -1,0 +1,22 @@
+#login {
+  text-align: center;
+  margin: 55px 0 100px;
+}
+
+#login .login_input_wrap input {
+  display: block;
+  width: 400px;
+  height: 56px;
+  padding-left: 20px;
+  margin: 5px auto;
+}
+
+#login .login_input_wrap input:focus {
+  border: 3px solid yellow;
+  outline: none;
+}
+
+#login .login_input_wrap button {
+  display: block;
+  margin: 0 auto;
+}

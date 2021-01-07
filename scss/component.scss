@@ -1,0 +1,354 @@
+//sec6 img_box
+.board_area{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 ;
+  section{
+    position: relative;
+    width: 273px;
+    height: 271px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    .img_area{
+      position: relative;
+      width: 100%;
+      height: 188px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      .img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s;
+        overflow: hidden;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }//img
+      .new_box{
+        position: absolute;
+        bottom:0;
+        width: 82px;
+        height: 32px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        z-index: 1;
+        font-size: 14px;
+        overflow: hidden;
+        font-weight: 600;
+      }
+    }//img_area
+    .description{
+      float: left;
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: -2.5px;
+      line-height: 1.6rem;
+      word-break: break-all;
+    }
+  }//section
+}
+.board_area1{
+  h2{
+    padding-bottom: 20px;
+  }
+  section{
+    position: relative;
+    width: 273px;
+    height: 152px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    .img_area{
+      position: relative;
+      width: 100%;
+      height: 188px;
+      overflow: hidden;
+      border: 0;
+      margin-bottom: 15px;
+      .img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-image: url("../img/new_card/new_card01.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s;
+        transform: scale(1.0);
+        border: 0;
+        &:hover{
+          transform: scale(1.1);
+
+        }
+      }//img
+      .new_box{
+        position: absolute;
+        bottom:0;
+        width: 82px;
+        height: 32px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        z-index: 1;
+        background: #c35c3c;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }//img_area
+    .description{
+      float: left;
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: -2.5px;
+      line-height: 1.6rem;
+    }
+  }//section
+}
+//이미지 끼우기
+.img{
+  cursor: pointer;
+  &.img01{
+    background: url("../img/new_card/new_card01.jpg");
+  }
+  &.img02{
+    background: url("../img/new_card/new_card02.jpg");
+  }
+  &.img03{
+    background: url("../img/new_card/new_card03.jpg");
+  }
+  &.img04{
+    background: url("../img/new_card/new_card04.jpg");
+  }
+  &.img05{
+    background: url("../img/new_card/new_card05.jpg");
+  }
+  &.img06{
+    background: url("../img/new_card/new_card06.jpg");
+  }
+  &.img07{
+    background: url("../img/new_card/new_card07.jpg");
+  }
+  &.img08{
+    background: url("../img/new_card/new_card08.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+//서울 영상 img class 재할당
+.board_area1 section{
+    width: 280px;
+    height: 220px;
+    padding: 0 20px 0 0;
+  .img_area{
+    box-sizing: border-box;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    .img{
+      cursor: pointer;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      &.img09{
+        background: url("../img/new_card/new_card09.jpg");
+      }
+    }
+    .text{
+      position: absolute;
+      width: 280px;
+      height: 27px;
+      left: 0;
+      box-sizing: border-box;
+      bottom: 0;
+      color: #f1f1f1;
+      background: rgba(000,000,000,.5);
+      overflow: hidden;
+      font-size: 16px;
+      font-weight: 500;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+  }
+}
+//new_tag color
+.new_work{
+  background: #028ab6;
+}
+.new_well{
+  background: #d76000;
+}
+.new_cul{
+  background: #9b64d3;
+}
+.new_home{
+  background: #c35c3c;
+}
+.new_soule{
+  background: #000;
+  opacity: .7;
+}
+//sec6 end
+
+// 게시글 테이블
+p{
+  margin-top: 5px;
+  &:first-child{
+    margin-top: 0;
+  }
+  .tag{
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 18px;
+    &.grenn{
+      color: #09ac43;
+    }
+    &.eco_green{
+      color: #069363;
+    }
+    &.home{
+      color: #c35c3c;
+    }
+    &.work{
+      color: #028ab6;
+    }
+    &.cat{
+      color: #9b64d3;
+    }
+    &.safe{
+      color: #e44869;
+    }
+  }
+
+  .n_item{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+}
+
+// 전체보기 +
+.all{
+  position: absolute;
+  background: url("../img/res_soule/icon_set.png") no-repeat 0 -259px;
+  right: 0;
+  a{
+    font-size: 15px;
+    color: #7d7d7d;
+    display: inline-block;
+    width: 100%;
+    }
+}
+
+.board_area1{
+  .news_soule{
+    width: 440px;
+    height: 200px;
+    .news_item_wrap{
+        overflow: hidden;
+        .n_item{
+          width: 440px;
+          height: 27px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          letter-spacing: -2px;
+          color: #555555;
+        }
+        .grenn{
+          font-weight: 400;
+        }
+      }
+    }
+  .sns_banner{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 195px;
+    margin-top: 15px;
+    margin-left: 22px;
+    background: url("../img/sns_list/bg_sns_list.jpg") no-repeat;
+    a.sns_list{
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 1.2;
+      padding: 10px 15px;
+      font-size: 22px;
+      font-weight: 700;
+      box-sizing: border-box;
+      color: #222222;
+      span{
+        display: inline-block;
+        position: relative;
+        padding-right: 50px;
+        color: #222;
+        font-size: $fontSizePrimary;
+        font-weight: 600;
+        letter-spacing: normal;
+        &::after{
+          content: '';
+          position: absolute;
+          top: -2px;
+          right: 0;
+          display: inline-block;
+          width: 34px;
+          height: 24px;
+          background: url("../img/sns_list/ico_sns_list.png") no-repeat -247px 0;
+          border-left: 1px solid #878787;
+          padding-right: 6px;
+        }
+      }
+    }
+    ul{
+      overflow: hidden;
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      width: 276px;
+      height: 40px;
+      margin-left: -138px;
+      li{
+        float: left;
+        margin: 0 3px;
+        a{
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: url("../img/sns_list/ico_sns_list.png") no-repeat;
+          text-indent: -9999em;
+          &.insta{
+            background-position: 0 0;
+          }
+          &.facebook{
+            background-position: -40px 0;
+          }
+          &.twitter{
+            background-position: -80px 0;
+          }
+          &.blog{
+            background-position: -120px 0;
+          }
+          &.youtube{
+            background-position: -160px 0;
+          }
+          &.kakao{
+            background-position: -200px 0;
+          }
+        }
+      }
+    }
+  }
+}

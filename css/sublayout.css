@@ -1,0 +1,112 @@
+#container #lnb {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  padding: 55px 0 0 0;
+  float: left;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#container #lnb h2 {
+  text-align: center;
+}
+
+#container .content {
+  padding: 52px 0 60px;
+  width: 912px;
+  float: right;
+  background: #fff;
+  min-height: 600px;
+}
+
+#container .content .title-wrap {
+  position: relative;
+}
+
+#container .content .title-wrap h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#container .content .title-wrap .path {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 58px;
+  color: #555;
+}
+
+#container .content .title-wrap .path span, #container .content .title-wrap .path a {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+#container .content .title-wrap .print {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+#container .content .title-wrap .print a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #cccccc;
+  background: url("../img/res_soule/icon_set.png") no-repeat 5px -195px;
+  text-indent: -9999px;
+}
+
+#container .content .content_gate {
+  margin: 40px 0;
+  border: 1px solid #ddd;
+}
+
+#container .content .content_gate ul li {
+  border-bottom: 1px solid #ddd;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#container .content .content_gate ul li .tit {
+  display: table-cell;
+  width: 170px;
+  padding: 20px 0;
+  background-color: #f4f6f7;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+  font-style: 15px;
+}
+
+#container .content .content_gate ul li .con {
+  padding-left: 15px;
+}
+
+#container .content .content_gate ul li .con .a-tex {
+  display: inline-block;
+  margin: 0 0 0 -15px;
+  overflow: hidden;
+}
+
+#container .content .content_gate ul li .con .a-tex a {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px 0;
+  line-height: 40px;
+}
+
+#container .content .content_gate ul li .con .a-tex a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+  display: block;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+a{color: #222222;}
+//파일분화
+@import "var.scss";
+@import "mixin.scss";
+@import "layout.scss";
+@import "component.scss";
+@import "subpage.scss";
+
+//slide
+@import "slide.scss";
+
+//page 분화
+@import "login.scss";
+@import "sublayout.scss";
+@import "citizen.scss";

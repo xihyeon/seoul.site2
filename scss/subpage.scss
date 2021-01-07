@@ -1,0 +1,421 @@
+body.subpage {
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 3px;
+  letter-spacing: -2px;
+
+  #content_fullsize{
+    width: 100%;
+  }
+  ::selection {
+    background: $langBorderColor;
+    color: #f1f1f1;
+    text-shadow: none;
+  }
+  .inner {
+    width: $siteWidth;
+    overflow: hidden;
+    height: auto;
+    margin: 0 auto;
+  }
+  section {
+    border: 0;
+    .notice_dd{
+        font-size: 30px;
+        text-align: center;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -2.5px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .row {
+    overflow: hidden;
+    width: 100%;
+    [class^=col] {
+      float: left;
+      margin-left: $gutterWidth;
+      box-sizing: border-box;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  #wrap {
+    width: 100%;
+    height: 100%;
+
+    #header {
+      letter-spacing: 3px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      #top_area {
+        .logo {
+          position: relative;
+          float: left;
+          overflow: hidden;
+
+          a {
+            display: block;
+            width: 105px;
+            height: 27px;
+            margin-top: 8px;
+            background-image: url("../img/res_soule/icon_set.png");
+            background-repeat: no-repeat;
+            background-position: -5px -165px;
+          }
+          //a
+        }
+        //rogo
+        width: 100%;
+        float: left;
+        font-size: $fontSizePrimary;
+        font-weight: 500;
+        position: relative;
+
+        #gnb {
+          position: relative;
+          width: 100%;
+          float: left;
+          height: 56px;
+
+          #menu_left {
+            float: left;
+            font-weight: 600;
+            padding-left: 22px;
+          }
+          //menu_left
+
+          #menu_right {
+            float: right;
+            font-weight: 700;
+            font-size: $fontSizeSmall;
+          }
+
+          ul {
+            float: left;
+
+            li {
+              float: left;
+              margin-left: 19px;
+
+              a {
+                line-height: 3.3rem;
+              }
+            }
+          }
+        }
+      }
+      //top area
+
+
+    }
+    //header
+    #surch_box {
+      width: 100%;
+      background: $pointColor;
+      .surch_inner {
+        display: block;
+        position: relative;
+        width: $siteWidth;
+        height: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+        .surch_logo {
+          display: inline-block;
+          position: relative;
+          float: left;
+          margin: 30px 0;
+          overflow: hidden;
+
+          a {
+            display: block;
+            width: 220px;
+            height: 50px;
+            background-image: url("../img/res_soule/seoul_surchLogo.png");
+            background-repeat: no-repeat;
+            background-position: 0 -55px;
+          }
+        }
+
+        .surch {
+          display: inline-block;
+          position: relative;
+          left: 15%;
+          width: 400px;
+          height: 40px;
+          border: 3px solid $pointColor;
+          box-sizing: border-box;
+          margin: 30px 0;
+          overflow: hidden;
+
+          img {
+            cursor: pointer;
+            position: absolute;
+            width: 29px;
+            height: 16px;
+            right: 40px;
+            top: 10px;
+          }
+
+          .btn_TopSearch {
+            cursor: pointer;
+            position: relative;
+            width: 36px;
+            height: 36px;
+            float: right;
+            border: 0;
+            background: white;
+            background-image: url("../img/res_soule/icon_set.png");
+            background-position: -32px -99px;
+            background-repeat: no-repeat;
+            &:focus{
+              outline: none;
+            }
+          }
+
+          input {
+            position: absolute;
+            outline: 0;
+            width: calc(100% - 40px);
+            height: 100%;
+            border: 0;
+            padding: 0 10PX;
+
+            &::placeholder {
+              font-weight: 300;
+              color: $pointColor;
+            }
+          }
+        }
+
+        #lang_site {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 138px;
+          height: 31px;
+
+          .siteLeng {
+            float: left;
+            width: 100px;
+            height: auto;
+            color: $site_langColor;
+            font-size: $fontSizeDescription;
+            border: 1px solid $langBorderColor;
+            padding: 0 0 0 2px;
+            line-height: 21px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            z-index: -1;
+            background-image: url("../img/res_soule/bg_select_arrow.png");
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            background-size: 10%;
+
+            &:focus {
+              box-shadow: 0;
+              outline: 0;
+            }
+          }
+        }
+        //slect
+
+        .select_btn {
+          position: absolute;
+          background: $btnLangColor;
+          border-radius: 0;
+          border: 0;
+          color: #fff;
+          display: inline-block;
+          font-size: $fontSizeDescription;
+          line-height: 20px;
+          width: 38px;
+          height: 24px;
+        }
+      }
+      //lang_site
+    }
+
+    //section
+    footer {
+      .inner {
+        .footer_link {
+          height: 12px;
+          padding: 20px 0 0;
+          background: orange;
+        }
+      }
+    }
+
+    footer {
+      border-top: 1px solid #d0d0d0;
+      width: $siteWidth;
+      margin: 0 auto;
+
+      .footer-link {
+        position: relative;
+        height: auto;
+        padding: 0;
+
+        ul {
+          position: absolute;
+          float: left;
+          padding: 15px 0;
+
+          li {
+            position: relative;
+            float: left;
+            padding: 0 10px;
+
+            &:first-child {
+              padding-left: 0;
+            }
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 0;
+              display: block;
+              width: 1px;
+              height: 14px;
+              margin-top: -6px;
+              background: #dcdcdc;
+            }
+
+            a {
+              font-size: $fontSizeDescription;
+              color: #636363;
+
+              &.policy {
+                font-weight: bolder;
+              }
+            }
+          }
+        }
+
+        .sns {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          padding: 15px 0;
+          overflow: hidden;
+          font-size: 0;
+          text-align: center;
+
+          a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            font-size: 0;
+            margin-left: 5px;
+            text-indent: -9999em;
+            background: url("../img/res_soule/icon_set_sns.png") no-repeat 0 0;
+
+            &.fb {
+              background-position: -25px 0;
+
+              &:hover {
+                background-position: -25px -24px;
+              }
+            }
+
+            &.tw {
+              background-position: -50px 0;
+
+              &:hover {
+                background-position: -50px -24px;
+              }
+            }
+
+            &.ist {
+              background-position: -75px 0;
+
+              &:hover {
+                background-position: -75px -24px;
+              }
+            }
+
+            &.ks {
+              background-position: -100px 0;
+
+              &:hover {
+                background-position: -100px -24px;
+              }
+            }
+
+            &.yt {
+              background-position: -125px 0;
+
+              &:hover {
+                background-position: -125px -24px;
+              }
+            }
+
+            &.bl {
+              background-position: -150px 0;
+
+              &:hover {
+                background-position: -150px -24px;
+              }
+            }
+          }
+        }
+      }
+
+      .siteAddr {
+        width: 100%;
+        margin-top: 60px;
+        position: relative;
+        padding: 22px 0;
+        float: left;
+        border-top: 1px solid #ccc;
+
+        .foo-logo {
+          margin-right: 40px;
+          float: left;
+          width: 108px;
+          height: 45px;
+          background: url("../img/res_soule/icon_set.png") no-repeat -180px 0;
+        }
+
+        .address {
+          width: 360px;
+          height: 18px;
+          display: inline-block;
+          letter-spacing: -2px;
+          vertical-align: top;
+
+          li {
+            display: block;
+            padding: 2px 0;
+            font-size: $fontSizeDescription;
+            color: #636363;
+          }
+        }
+
+        .mark {
+          position: absolute;
+          top: 20px;
+          right: 0;
+          padding: 0;
+          background: none;
+
+          li {
+            float: left;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

@@ -1,0 +1,281 @@
+.board_area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.board_area section {
+  position: relative;
+  width: 273px;
+  height: 271px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.board_area section .img_area {
+  position: relative;
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.board_area section .img_area .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.board_area section .img_area .img:hover {
+  transform: scale(1.2);
+}
+
+.board_area section .img_area .new_box {
+  position: absolute;
+  bottom: 0;
+  width: 82px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  z-index: 1;
+  font-size: 14px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.board_area section .description {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: -2.5px;
+  line-height: 1.6rem;
+  word-break: break-all;
+}
+
+.board_area1 h2 {
+  padding-bottom: 20px;
+}
+
+.board_area1 section {
+  position: relative;
+  width: 273px;
+  height: 152px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.board_area1 section .img_area {
+  position: relative;
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.board_area1 section .img_area .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../img/new_card/new_card01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+  transform: scale(1);
+  border: 0;
+}
+
+.board_area1 section .img_area .img:hover {
+  transform: scale(1.1);
+}
+
+.board_area1 section .img_area .new_box {
+  position: absolute;
+  bottom: 0;
+  width: 82px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  z-index: 1;
+  background: #c35c3c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.board_area1 section .description {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: -2.5px;
+  line-height: 1.6rem;
+}
+
+.img {
+  cursor: pointer;
+}
+
+.img.img01 {
+  background: url("../img/new_card/new_card01.jpg");
+}
+
+.img.img02 {
+  background: url("../img/new_card/new_card02.jpg");
+}
+
+.img.img03 {
+  background: url("../img/new_card/new_card03.jpg");
+}
+
+.img.img04 {
+  background: url("../img/new_card/new_card04.jpg");
+}
+
+.img.img05 {
+  background: url("../img/new_card/new_card05.jpg");
+}
+
+.img.img06 {
+  background: url("../img/new_card/new_card06.jpg");
+}
+
+.img.img07 {
+  background: url("../img/new_card/new_card07.jpg");
+}
+
+.img.img08 {
+  background: url("../img/new_card/new_card08.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.board_area1 section {
+  width: 280px;
+  height: 220px;
+  padding: 0 20px 0 0;
+}
+
+.board_area1 section .img_area {
+  box-sizing: border-box;
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.board_area1 section .img_area .img {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.board_area1 section .img_area .img.img09 {
+  background: url("../img/new_card/new_card09.jpg");
+}
+
+.board_area1 section .img_area .text {
+  position: absolute;
+  width: 280px;
+  height: 27px;
+  left: 0;
+  box-sizing: border-box;
+  bottom: 0;
+  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.new_work {
+  background: #028ab6;
+}
+
+.new_well {
+  background: #d76000;
+}
+
+.new_cul {
+  background: #9b64d3;
+}
+
+.new_home {
+  background: #c35c3c;
+}
+
+.new_soule {
+  background: #000;
+  opacity: .7;
+}
+
+p {
+  margin-top: 5px;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p .tag {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 18px;
+}
+
+p .tag.grenn {
+  color: #09ac43;
+}
+
+p .tag.eco_green {
+  color: #069363;
+}
+
+p .tag.home {
+  color: #c35c3c;
+}
+
+p .tag.work {
+  color: #028ab6;
+}
+
+p .tag.cat {
+  color: #9b64d3;
+}
+
+p .tag.safe {
+  color: #e44869;
+}
+
+p .n_item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.all {
+  position: absolute;
+  background: url("../img/res_soule/icon_set.png") no-repeat 0 -259px;
+  right: 0;
+}
+
+.all a {
+  font-size: 15px;
+  color: #7d7d7d;
+  display: inline-block;
+  width: 100%;
+}

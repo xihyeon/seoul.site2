@@ -1,0 +1,508 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <title>서울시에 오신것을 환영합니다.</title>
+   <meta name="description" content="DESCRIPTION">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- css -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <div id="wrap">
+     <header id="header">
+       <div id="top_area">
+         <nav id="gnb">
+           <h1 class="logo"><a href="index.html"></a></h1>
+           <ul id="menu_left">
+             <li><a href="subpage/realnews.html">서울소식</a></li>
+             <li><a href="subpage/citizen_do.html">시민참여</a></li>
+             <li><a href="subpage/area_info.html">분야별정보</a></li>
+             <li><a href="subpage/soul_with.html">서울소개</a></li>
+             <li><a href="#">부서안내</a></li>
+             <li><a href="#">정보공개</a></li>
+             <li><a href="https://eungdapso.seoul.go.kr/">응답소</a></li>
+           </ul>
+           <ul id="menu_right">
+             <li><a href="loginpage/login.html">로그인</a></li>
+             <li><a href="loginpage/login.html">나의서울</a></li>
+             <li><a href="loginpage/login.html">전자우편</a></li>
+           </ul>
+         </nav>
+       </div>
+       <div id="surch_box">
+         <div class="surch_inner">
+           <h1 class="surch_logo"><a href="index.html"></a></h1>
+           <div class="surch">
+             <input type="text" id="inp_Topsurch" placeholder="검색어를 입력해 주세요">
+             <img src="img/res_soule/kebord.png" alt="v_kebord">
+             <button class="btn_TopSearch"></button>
+           </div>
+           <!-- leng -->
+           <div id="lang_site">
+             <label for="siteLeng"></label>
+             <select class="siteLeng" name="siteLeng">
+               <option value="en">ENGLISH</option>
+               <option value="js">日本語</option>
+               <option value="ch">简体中文</option>
+               <option value="ch2">繁体中文</option>
+               <option value="ch2">français</option>
+             </select>
+             <input type="button" value="GO" class="select_btn">
+           </div>
+           <!-- 날씨 -->
+           <div class="info_weather">
+             <div class="txt_area">
+               <p>
+                 <a href="#">
+                   <strong class="w_deg">-15ºC</strong>
+                   <span class="w_txt1">서울시</span>
+                 </a>
+               </p>
+               <p>
+                 <a href="#">
+                   <span class="w_txt2">미세먼지(좋음) 초미세먼지(보통)</span>
+                 </a>
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </header>
+     <main>
+       <!-- section 01 -->
+       <div class="inner">
+         <section class="sec1">
+           <div class="slide">
+             <!-- 주요뉴스 -->
+             <div class="slide_content slide_content1">
+               <h3>
+                 <a href="#" class="banner-btn on" id="slide_btn1">
+                   <i class="ico_main ico_main_news">
+                     <span></span>
+                   </i>
+                   주요뉴스
+                 </a>
+               </h3>
+               <div class="hotissue_banner on swiper2" id="slide1">
+                 <ul class="swiper-wrapper">
+                   <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue01.jpg" alt="hotissue01"><figcaption>12월10일부터 전동킥보드 한강 달린다 주의해야할 점은?</figcaption></figure></li>
+                   <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue02.jpg" alt="hotissue02"><figcaption>추첨을 통해 500명에게 서울 사랑 상품권 제공!</figcaption></figure></li>
+                   <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue03.jpg" alt="hotissue03"><figcaption>수도권 거리두기 2.5단계로 격상.. 12월 28일까지</figcaption></figure></li>
+                   <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue04.jpg" alt="hotissue04"><figcaption>나눔으로 희망을 이어주세요 2021 나눔캠페인</figcaption></figure></li>
+                   <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue05.jpg" alt="hotissue05"><figcaption>2020서울 디자인 위크</figcaption></figure></li>
+                   <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue06.jpg" alt="hotissue06"><figcaption>시간여행자 Time Traveller 무한으로의 탐험</figcaption></figure></li>
+                 </ul>
+                 <!-- 네비게이션 버튼 -->
+               </div>
+               <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+               <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+              <div class="swiper-pagination main_page"></div>
+             </div>
+             <!-- //주요뉴스 -->
+             <!-- 시민참여 -->
+             <div class="slide_content slide_content2">
+               <h3>
+                 <a href="#" class="banner-btn citi" id="slide_btn2" >
+                   <i class="ico_main ico_main_citizen">
+                     <span class="citi"></span>
+                   </i>
+                   시민참여
+                 </a>
+               </h3>
+               <div class="hotissue_banner on swiper2" id="slide2">
+                 <ul class="swiper-wrapper">
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue07.jpg" alt="hotissue01"><figcaption>12월10일부터 전동킥보드 한강 달린다 주의해야할 점은?</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue08.jpg" alt="hotissue02"><figcaption>추첨을 통해 500명에게 서울 사랑 상품권 제공!</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue09.jpg" alt="hotissue03"><figcaption>수도권 거리두기 2.5단계로 격상.. 12월 28일까지</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue10.jpg" alt="hotissue04"><figcaption>나눔으로 희망을 이어주세요 2021 나눔캠페인</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue11.jpg" alt="hotissue05"><figcaption>2020서울 디자인 위크</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue12.jpg" alt="hotissue06"><figcaption>시간여행자 Time Traveller 무한으로의 탐험</figcaption></figure></li>
+               </ul>
+               </div>
+               <!-- 네비게이션 버튼 -->
+                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+               <div class="swiper-pagination main_page"></div>
+             </div>
+
+
+             <!-- //시민참여 -->
+           </div><!--slide-->
+           <div class="corona_wrap">
+             <div class="c_date">
+               '20.12.08.00시기준'
+             </div>
+             <div class="input_list">
+               <span class="cList_1">10,663</span>
+               <span class="cList_2">214</span>
+               <span class="cList_3">7,029</span>
+               <span class="cList_4">77</span>
+               <span class="cList_5">104</span>
+             </div>
+           </div>
+         </section>
+       </div>
+       <!-- section 02 -->
+       <div class="inner">
+         <section class="sec2">
+           <h2>주요서비스</h2>
+           <div class="m_service">
+             <p class="all">
+               <a href="">전체보기&nbsp;</a>
+             <ul>
+               <li><a href="#"><i class="ico_service s2_01"></i>응답소(민원신고)</a></li>
+               <li><a href="#"><i class="ico_service s2_02"></i>민주주의서울</a></li>
+               <li><a href="#"><i class="ico_service s2_03"></i>서울일자리</a></li>
+               <li><a href="#"><i class="ico_service s2_04"></i>평생학습포털</a></li>
+               <li><a href="#"><i class="ico_service s2_05"></i>우리동네키움포털</a></li>
+               <li><a href="#"><i class="ico_service s2_06"></i>부동산정보</a></li>
+               <li><a href="#"><i class="ico_service s2_07"></i>공공서비스예약</a></li>
+               <li><a href="#"><i class="ico_service s2_08"></i>서울복지포털</a></li>
+               <li><a href="#"><i class="ico_service s2_09"></i>서울주거포털</a></li>
+               <li><a href="#"><i class="ico_service s2_10"></i>공약&amp;매니페스토</a></li>
+               <li><a href="#"><i class="ico_service s2_11"></i>시의회</a></li>
+             </ul>
+           </div>
+         </section>
+       </div>
+       <section class="sec3">
+         <div class="inner">
+           <!-- 이미지배치 -->
+           <ul>
+             <li><a href="#">
+                 <img src="img/res_soule/corona_banner01.jpg" alt="코로나1">
+               </a></li>
+             <li><a href="#">
+                 <img src="img/res_soule/corona_banner02.jpg" alt="코로나">
+               </a></li>
+             <li><a href="#">
+                 <img src="img/res_soule/corona_banner03.jpg" alt="코로나">
+               </a></li>
+           </ul>
+         </div>
+       </section>
+       <!-- section456-->
+       <div class="inner">
+         <!-- sec4 -->
+         <section class="sec4">
+           <div class="sec4_area">
+             <div class="sec4_wrap">
+               <p class="more">
+                 <a href="#"></a>
+               </p>
+               <div class="sec4_title">
+                 <h2>이벤트신청</h2>
+               </div>
+               <div class="news_item_wrap">
+                 <p class="n_item"><b class="tag grenn">환경</b>[미세먼지 계절관리제 이벤트]'미세먼지를 줄이기'</p>
+                 <p class="n_item"><b class="tag eco_green">경제</b>꿈꾸는 개발자 데뷔코스, 싹(SSAC)2기 교육생 모집</p>
+                 <p class="n_item"><b class="tag home">주택</b>[기간연장]효창 독립 100년 공원 작품 공모전(~12.)</p>
+                 <p class="n_item"><b class="tag grenn">환경</b>2020년 서울대공원 홈페이지 만족도 조사</p>
+                 <p class="n_item"><b class="tag work">행정</b>함약군 주말체험농장「산양삼 웰컴 체험농장」분양안내</p>
+               </div>
+             </div>
+           </div>
+           <div class="sec4_area">
+             <div class="sec4_wrap">
+               <p class="more">
+                 <a href="#"></a>
+               </p>
+               <div class="sec4_title">
+                 <h2>이달의 행사 및 축제</h2>
+                 <span></span>
+               </div>
+               <div class="news_item_wrap">
+                 <p class="n_item"><b class="tag cat">문화</b>서울은 미술관 대학협력 프로젝트 온라인 전시</p>
+                 <p class="n_item"><b class="tag cat">문화</b>2020 서울 디자인위크</p>
+                 <p class="n_item"><b class="tag grenn">환경</b>서울식물원 기획전 &lt;숲의 이면(Beneath the Forest</p>
+                 <p class="n_item"><b class="tag safe">안전</b>&lt;2020 서울 국제 도시회복력 포럼&gt;개최 안내</p>
+                 <p class="n_item"><b class="tag eco_green">행정</b>2020년 온라인 제주감귤박람회</p>
+               </div>
+             </div>
+           </div>
+           <div class="sec4_area">
+             <div class="sec4_wrap">
+               <div class="sec4_title">
+                 <h2>자주 찾은 서비스</h2>
+               </div>
+               <ul class="vist_s">
+                 <li><a href="#">서울관광</a></li>
+                 <li><a href="#">지방세납부</a></li>
+                 <li><a href="#">평생학습포털</a></li>
+                 <li><a href="#">인재개발원</a></li>
+                 <li><a href="#">서울일자리포털</a></li>
+                 <li><a href="#">승용차마일리지</a></li>
+                 <li><a href="#">내손안에서울</a></li>
+                 <li><a href="#">서울부동산정보광장</a></li>
+                 <li><a href="#">서울청년포털</a></li>
+                 <li><a href="#">서울스마트불편신고</a></li>
+               </ul>
+             </div>
+           </div>
+
+         </section>
+         <!-- //sec4 -->
+         <!-- sec5 -->
+         <section class="sec5">
+           <h2>분야별&nbsp;정보</h2>
+           <ul>
+             <li class="dd_01">
+               <p><a href="">주택</a></p>
+             </li>
+             <li class="dd_02">
+               <p><a href="">경제</a></p>
+             </li>
+             <li class="dd_03">
+               <p><a href="">교통</a></p>
+             </li>
+             <li class="dd_04">
+               <p><a href="">환경</a></p>
+             </li>
+             <li class="dd_05">
+               <p><a href="">복지</a></p>
+             </li>
+             <li class="dd_06">
+               <p><a href="">안전</a></p>
+             </li>
+             <li class="dd_07">
+               <p><a href="">문화</a></p>
+             </li>
+             <li class="dd_08">
+               <p><a href="">행정</a></p>
+             </li>
+           </ul>
+         </section>
+         <!-- //sec5 -->
+         <!-- sec6 새소식 -->
+         <section class="sec6">
+           <h2>새소식</h2>
+           <div class="board_area">
+             <p class="all">
+               <a href="">전체보기&nbsp;</a>
+             </p>
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img01">
+                   <div class="new_box new_home">주택</div>
+                 </div>
+                 <p class="description">그것이 알고 싶다 질문으로 알아보는 새 광화문 광장</p>
+               </section>
+             </div>
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img02">
+                   <div class="new_box new_work">행정</div>
+                 </div>
+                 <p class="description">2021 겨울방학 대학생 아르바이트 모집안내</p>
+               </section>
+             </div>
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img03">
+                   <div class="new_box new_work">행정</div>
+                 </div>
+                 <p class="description">2021학년도 취학통지 온라인 제출 서비스 실시(2020.12.1~14)</p>
+               </section>
+             </div>
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img04">
+                   <div class="new_box new_cul">문화</div>
+                 </div>
+                 <p class="description">코로나로 지친 시민 응원! &lt;문화 토닥토닥&gt; 12월 프로그램 안내</p>
+               </section>
+             </div>
+           </div>
+           <div class="board_area">
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img05">
+                   <div class="new_box new_well">복지</div>
+                 </div>
+                 <p class="description">그것이 알고 싶다 질문으로 알아보는 새 광화문 광장</p>
+               </section>
+             </div>
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img06">
+                   <div class="new_box new_work">행정</div>
+                 </div>
+                 <p class="description">그것이 알고 싶다 질문으로 알아보는 새 광화문 광장</p>
+               </section>
+             </div>
+             <div class="col_3">
+               <section>
+                 <div class="img_area">
+                   <img class="img img07">
+                   <div class="new_box new_well">복지</div>
+                 </div>
+                 <p class="description">그것이 알고 싶다 질문으로 알아보는 새 광화문 광장</p>
+               </section>
+             </div>
+             <div class="col_3">
+               <section>
+                 <img class="img img08">
+               </section>
+             </div>
+           </div>
+           <div class="board_area1">
+             <!-- 서울 영상 -->
+             <section>
+               <h2>서울영상</h2>
+               <div class="img_area">
+                 <img class="img img09">
+                 <p class="text">[서울집콕 360VR]ㅣ억새풀과 바이올린 선율을 드론 VR영상으로ㅣ하늘공원 억새밭 (f. 바이올리니스트 장한샘)</p>
+               </div>
+             </section>
+             <!-- //서울영상 -->
+             <section class="news_soule">
+               <h2>서울 소식</h2>
+               <div class="news_item_wrap">
+                 <p class="n_item"><b class="tag grenn">고시공고</b>서울시 사회적 거리두기 비상조치 시행에 따른 이미 용법 방역조치 고시</p>
+                 <p class="n_item"><b class="tag grenn">입찰공고</b>입찰공고-긴급2021년 생활복지 통합정보시스템 운영 및 유지관리용역</p>
+                 <p class="n_item"><b class="tag grenn">채용시험</b>서울특별시 어린이병원 임기제 공무원 당직의사 채용시험 서류전 합격자 및 면접시험 시험 계획 공고</p>
+                 <p class="n_item"><b class="tag grenn">보도자료</b>보도참고자료 시장 권한대행 발표문_ 저녁 9시이후 서울을 멈춥니다.(12.4.)</p>
+               </div>
+             </section>
+             <section class="sns_banner">
+               <a href="http://mediahub.seoul.go.kr/reporter/services/sns.do" target="_blank" class="sns_list">
+                 <span>서울시 SNS</span>
+               </a>
+               <ul>
+                 <li><a href="http://www.instagram.com/seoul_official" class="insta">인스타</a></li>
+                 <li><a href="https://www.facebook.com/seoul.kr" class="facebook">페이스북</a></li>
+                 <li><a href="http://twitter.com/seoulmania" class="twitter">트위터</a></li>
+                 <li><a href="http://blog.naver.com/haechiseoul" class="blog">블로그</a></li>
+                 <li><a href="http://www.youtube.com/seoullive" class="youtube">유튜브</a></li>
+                 <li><a href="http://story.kakao.com/ch/seoul" class="kakao">카카오스토리</a></li>
+               </ul>
+             </section>
+           </div>
+         </section>
+         <section class="sec7">
+           <div class="slide">
+             <div class="main_banner">
+               <div class="mb_wrapper">
+                 <div class="swiper-container swiper1">
+                   <ul class="swiper-wrapper">
+                     <li class="swiper-slide"><img src="img/popupZon/pop01.jpg" alt="popupZon01"></li>
+                     <li class="swiper-slide"><img src="img/popupZon/pop02.jpg" alt="popupZon02"></li>
+                     <li class="swiper-slide"><img src="img/popupZon/pop03.jpg" alt="popupZon03"></li>
+                     <li class="swiper-slide"><img src="img/popupZon/pop04.jpg" alt="popupZon04"></li>
+                     <li class="swiper-slide"><img src="img/popupZon/pop05.jpg" alt="popupZon05"></li>
+                     <li class="swiper-slide"><img src="img/popupZon/pop07.jpg" alt="popupZon01"></li>
+                   </ul>
+                   <!-- 네비게이션 버튼 -->
+                   <!-- Add Arrows -->
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </section>
+       </div>
+     </main>
+     <footer>
+       <div class="inner">
+         <div class="footer-link">
+           <ul>
+             <li><a href="#">홈페이지도우미</a></li>
+             <li><a href="#" class="policy">개인정보처리방침</a></li>
+             <li><a href="#">저작권정책</a></li>
+             <li><a href="#">영상정보처리기기 운영 관리방침</a></li>
+             <li><a href="#">홈페이지바로잡기</a></li>
+             <li><a href="#">사이트.
+
+               </a></li>
+           </ul>
+           <div class="sns">
+             <a href="#" class="fb">페이스북</a>
+             <a href="#" class="tw">트위터</a>
+             <a href="#" class="ist">인스타그램</a>
+             <a href="#" class="ks">카카오스토리</a>
+             <a href="#" class="yt">유튜브</a>
+             <a href="#" class="bl">블로그</a>
+           </div>
+         </div>
+         <div class="siteAddr">
+           <span class="foo-logo"></span>
+           <ul class="address">
+             <li>서울특별시청&nbsp;04524&nbsp;서울특별시&nbsp;중구&nbsp;세종대로&nbsp;110&nbsp;[찾아오시는길]</li>
+             <li>대표전화:02-120또는02-731-2120</li>
+             <li>ⓒSeoul Metropolitan Govermment all rights reserved</li>
+           </ul>
+           <ul class="mark">
+             <li><a href="#"><img src="img/res_soule/f_mark_1.png" alt="ism"></a></li>
+             <li><a href="#"><img src="img/res_soule/footer_mark_wah.png" alt="wah"></a></li>
+           </ul>
+         </div>
+       </div>
+     </footer>
+   </div>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/swiper.js"></script>
+   <script src="js/common.js"></script>
+   <script>
+     var swiper = new Swiper('.swiper1', {
+       loop : true,
+       autoplay: 3000,
+       slidesPerView: 3,
+       spaceBetween: 30,
+       freeMode: true,
+       spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+       pagination: {
+         el: '.swiper-pagination',
+         type: 'fraction',
+       },
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       }
+     });
+
+     var swiper = new Swiper('.swiper2', {
+       loop : true,
+       autoplay: 3000,
+       slidesPerView: 1,
+       freeMode: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+       pagination: {
+         el: '.swiper-pagination',
+         type: 'fraction',
+       },
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       }
+     });
+
+
+
+   </script>
+ </body>
+
+ </html>

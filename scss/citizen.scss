@@ -1,0 +1,128 @@
+#lnb{
+  cursor: pointer;
+}
+#citizen_content{
+  position: relative;
+  width: 912px;
+  height: auto;
+  /*citizen 공통 box styling*/
+  .citizen_box{
+    position: relative;
+    position: relative;
+    width: 294px;
+    float: left;
+    border: 1px solid $borderColor;
+    padding: 30px 30px 30px 40px;
+    box-sizing: border-box;
+    h2{
+      font-weight: 500;
+    }
+    p{
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    ul{
+      margin-top: 10px;
+    }
+  }
+
+  /*citizen 개별 box styling*/
+
+  /*citi*/
+  .citi_top_wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 294px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    .citizen_box{
+      position: relative;
+      overflow: hidden;
+      &.citizen_01{
+        width: 294px;
+        height: 100%;
+        overflow: hidden;
+      }
+      &.citizen_02{
+        width: 580px;
+        height: 100%;
+        overflow: hidden;
+        .title_box{
+          display: inline;
+          ul{
+              position: absolute;
+              float: left;
+              top: 30px;
+              left: 160px;
+            li{
+              position: relative;
+              float: left;
+              margin-left: 20px;
+              &:first-child{
+              margin-left: 0;
+              }
+
+            }
+          }
+        }
+        #citi_02{
+          margin-top: 20px;
+          li{
+            margin-top: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .citi_bottom_wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p{
+      font-size: 14px;
+    }
+    .citizen_box{
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      &.citi_bottom_list{
+        display: block;
+        width: 440px;
+        height: 142px;
+        margin-bottom: 30px;
+        float: left;
+        overflow: hidden;
+      }
+    }
+  }
+  /*서울 소개 box styling*/
+  .area_soeul_list{
+    margin-right: 15px;
+    width: 294px;
+    height: 294px;
+    text-align: center;
+  }
+}
+
+/*sub citizon img absolute*/
+.cimg01{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &.citizon01{
+
+  }
+}
+
+.citi04{
+  background-image: url('../img/sub/04.png');
+  mix-blend-mode: multiply;
+}
+.citi05{
+  background-image: url('../img/sub/05.png');
+  mix-blend-mode: multiply;
+}

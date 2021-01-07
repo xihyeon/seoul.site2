@@ -1,0 +1,961 @@
+//initial
+html, body{
+  cursor: auto;
+}
+body{
+  letter-spacing: -2px;
+}
+::selection{
+  background: $langBorderColor;
+  color: #f1f1f1;
+  text-shadow: none;
+}
+.inner{
+  width: $siteWidth;
+  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
+}
+section{
+  border: 0;
+}
+h2{
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
+//mixin으로 설정해둔 값 넣을때.
+.row{
+  overflow: hidden;
+  width: 100%;
+  [class^=col]{
+    float: left;
+    margin-left: $gutterWidth;
+    box-sizing: border-box;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+#wrap{
+  width: 100%;
+  height: 100%;
+  #header{
+    letter-spacing: 3px;
+    position: relative;
+    width: $siteWidth;
+    margin: 0 auto;
+    overflow: hidden;
+
+    #top_area{
+      .logo{
+          position: relative;
+          float: left;
+          overflow: hidden;
+          a{
+            display: block;
+            width: 105px;
+            height: 27px;
+            margin-top: 8px;
+            background-image: url("../img/res_soule/icon_set.png");
+            background-repeat: no-repeat;
+            background-position: -5px -165px;
+          }//a
+        }//rogo
+      width: 100%;
+      float: left;
+      font-size: $fontSizePrimary;
+      font-weight: 500;
+      position: relative;
+      #gnb{
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 56px;
+        #menu_left{
+          float: left;
+          font-weight: 600;
+          padding-left: 22px;
+        }//menu_left
+        #menu_right{
+          float: right;
+          font-weight: 700;
+          font-size: $fontSizeSmall;
+        }
+        ul{
+          float: left;
+          li{
+            float: left;
+            margin-left: 19px;
+            a{line-height: 3.3rem;
+            }
+          }
+        }
+      }
+    }//top area
+    #surch_box{
+      .surch_inner{
+        display: inline-block;
+        position: relative;
+        width: $siteWidth;
+        height: 120px;
+        overflow: hidden;
+        .surch_logo{
+          display: inline-block;
+          position: relative;
+          float: left;
+          margin: 30px 0 30px;
+          overflow: hidden;
+          a{
+            display: block;
+            width: 220px;
+            height: 50px;
+            background-image: url("../img/res_soule/seoul_surchLogo.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
+        }
+        .surch{
+          display: inline-block;
+          position: relative;
+          left: 5%;
+          width: 460px;
+          height: 40px;
+          border: 3px solid $pointColor;
+          box-sizing: border-box;
+          margin: 30px 0 30px;
+          overflow: hidden;
+          img{
+            cursor: pointer;
+            position: absolute;
+            width: 29px;
+            height: 16px;
+            right: 40px;
+            top: 10px;
+          }
+          .btn_TopSearch{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            float: right;
+            border: 0;
+            background: white;
+            background-image: url("../img/res_soule/icon_set.png");
+            background-position: -32px -99px;
+            background-repeat: no-repeat;
+            &:focus{
+              outline: none;
+              cursor: pointer;
+            }
+          }
+          input{
+            position: absolute;
+            outline: 0;
+            width: calc(100% - 40px);
+            height: 100%;
+            border: 0;
+            padding: 0 10PX;
+            &::placeholder{
+              font-weight: 300;
+              color:$pointColor;
+            }
+          }
+        }
+        #lang_site{
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 138px;
+          height: 31px;
+          .siteLeng{
+            float: left;
+            width: 100px;
+            height: auto;
+            color: $site_langColor;
+            font-size: $fontSizeDescription;
+            border: 1px solid $langBorderColor;
+            padding: 0 0 0 2px;
+            line-height: 21px;
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            z-index: -1;
+            background-image: url("../img/res_soule/bg_select_arrow.png");
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            background-size: 10%;
+            &:focus{
+              box-shadow: 0;
+              outline: 0;
+            }
+            }
+          }//slect
+          .select_btn{
+            position: absolute;
+            background: $btnLangColor;
+            border-radius: 0;
+            border: 0;
+            color: #fff;
+            display: inline-block;
+            font-size: $fontSizeDescription;
+            line-height: 20px;
+            width: 38px;
+            height: 24px;
+          }
+        }//lang_site
+        .info_weather{
+          width: 260px;
+          height: 85px;
+          float: right;
+          margin: 15px 0 0 30px;
+          text-align: right;
+          .txt_area{
+            letter-spacing: 2px;
+            max-width: 242px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 5px;
+            float: left;
+            p{
+              text-align: left;
+              line-height: 20PX;
+              &:last-child{
+                font-weight: 300;
+                margin-top: 2px;
+              }//lastchild
+            }//text-align
+            a{
+              &:first-child{
+                .w_deg{
+                  font-size: $fontSizeTitle;
+                }
+                .w_txt1{
+                  font-size: $fontSizePrimary;
+                }
+              }
+              &:last-child{
+                font-size: $fontSizeDescription;
+              }
+            }
+          }
+        }
+      }
+    }//header
+    //section
+  .sec1{
+    height: 350px;
+    overflow: hidden;
+    .slide{
+      position: relative;
+      width: 770px;
+      height: 100%;
+      float: left;
+      .slide_content{
+        h3{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 80px;
+          height: 175px;
+          a{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            background-color: #d2e1e9;
+            color: #333;
+            font-weight: 600;
+            text-align: center;
+            box-sizing: border-box;
+            &.citi{
+              top:175px;
+            }
+            &.on{
+              background-color: #0158a8;
+              color:#fff;
+              &::after{
+                content: "";
+                position: absolute;
+                z-index: 10;
+                left: 99%;
+                top: 50%;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 25px 0 25px 32px;
+                border-color: transparent transparent transparent #0158a8;
+                margin-top: -25px;
+              }
+            }
+            .ico_main{
+              position: relative;
+              display: block;
+              width: 50px;
+              height: 50px;
+              margin: 0 auto 10px;
+              background-color: #fff;
+              background-repeat: 0 0;
+              border-radius: 50%;
+              span{
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  position: absolute;
+                  z-index: 100;
+                  background: url("../img/res_soule/icon_main.png") no-repeat 0 0;
+                  &.citi{
+                    background-position: -50px 0;
+                  }
+              }
+            }
+          }
+        }
+      }
+      .hotissue_banner{
+        overflow: hidden;
+        margin-left: 80px;
+        display: none;
+        &.on{
+          overflow: hidden;
+          display: block;
+        }
+      }
+    }
+    .corona_wrap{
+      position: relative;
+      float: right;
+      width: 360px;
+      height: 350px;
+      background: url("../img/res_soule/bg_forona_pc.jpg");
+      background-size: cover;
+      .c_date{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 25px;
+        color: #333;
+        letter-spacing: -2px;
+      }
+      span{
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        min-width: 47px;
+        height: 16px;
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: -0.09em;
+        &.cList_1{
+          top: 120px;
+          margin-left: -112px;
+        }
+        &.cList_2{
+          top: 120px;
+          margin-left: 57px;
+        }
+        &.cList_3{
+          top: 242px;
+          margin-left: -135px;
+        }
+        &.cList_4{
+          top: 242px;
+          margin-left: -10px;
+        }
+        &.cList_5{
+          top: 242px;
+          margin-left: 95px;
+        }
+      }
+    }
+  }
+  .sec2{
+    position: relative;
+    padding: 50px 0 0;
+    min-height: 152px;
+    h2{
+      border-bottom: 1px solid #ededed;
+      padding-bottom: 10px;
+    }
+    .m_service{
+      overflow: hidden;
+      .all{
+        width: 75px;
+        display: inline;
+        top: 60px;
+        a{
+          text-indent: -10px;
+        }
+      }
+      ul{
+        display: table;
+        width: 100%;
+        margin-top: 50px;
+        margin: 0 auto;
+        li{
+          margin-top: 20px;
+          height: 90px;
+          display: table-cell;
+          text-align: center;
+          a{
+            display: block;
+            padding-top: 20px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: -2px;
+            .ico_service{
+              display: block;
+              width: 60px;
+              height: 50px;
+              margin: 0 auto 10px;
+              background: url("../img/res_soule/icon_set_service_new.png") no-repeat;
+              box-sizing: border-box;
+              &.s2_01{
+                background-position: 0 0;
+              }
+              &.s2_02{
+                background-position: -60px 0;
+              }
+              &.s2_03{
+                background-position: -120px 0;
+              }
+              &.s2_04{
+                background-position: -180px 0;
+              }
+              &.s2_05{
+                background-position: -840px 0;
+              }
+              &.s2_06{
+                background-position: -300px 0;
+              }
+              &.s2_07{
+                background-position: -360px 0;
+              }
+              &.s2_08{
+                background-position: -960px 0;
+              }
+              &.s2_09{
+                background-position: -780px 0;
+              }
+              &.s2_10{
+                background-position: -900px 0;
+              }
+              &.s2_11{
+                background-position: -600px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec3{
+    margin-top: 38px;
+    height: 111px;
+    background: #eff4f8;
+    ul{
+      position: relative;
+      overflow: hidden;
+      li{
+        float: left;
+        width: 384px;
+        padding: 20px 0;
+        &:first-child a::before{
+          background: transparent;
+        }
+        a{
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 1px;
+            height: 60px;
+            background: #c1cfda;
+          }
+          img{
+            width: 384px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+  .sec4{
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    padding: 60px 0 0 0;
+    .sec4_area{
+      float: left;
+      width: 350px;
+      height: 290px;
+      overflow: hidden;
+      margin-left: 30px;
+      position: relative;
+      .sec4_wrap{
+        width: 100%;
+        position: relative;
+        float: left;
+        ul.vist_s{
+          margin: 0;
+          width: 300px;
+          height: 140px;
+          padding: 20px 20px 7px 60px;
+          background: #eff4f8;
+          li{
+            float: left;
+            width: calc(50% - 20px);
+            position: relative;
+
+            &::before{
+              content: '';
+              position: absolute;
+              background: #666666;
+              width: 2px;
+              height: 2px;
+              left: 0;
+              top: 60%;
+              margin-left: -10px;
+            }
+            a{
+              font-size: 14px;
+              letter-spacing: -2px;
+            }
+          }
+        }
+        p.more{
+          position: absolute;
+          width: 23px;
+          height: 22px;
+          right: 0;
+          top: 0;
+          font-size: 14px;
+          border: 1px solid #f1f1f1;
+          background: url("../img/res_soule/icon_set.png") no-repeat -1px -1px;
+          box-sizing: border-box;
+          overflow: hidden;
+          a{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .sec4_title{
+          h2{
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e9e9e9;
+          }
+        }
+        .news_item_wrap{
+          .n_item{
+            cursor: pointer;
+            width: 300px;
+            height: 27px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            letter-spacing: -2px;
+          }
+        }
+
+        &:first-child{
+          margin-left: 0;
+        }
+        }
+      }
+    }
+  }
+  .sec5{
+    height: 197px;
+    margin-top: 20px;
+    padding: 30px 0 0 0;
+    border-top: 1px solid #f1f1f1;
+    ul{
+      margin-top: 10px;
+      padding: 0 27px;
+      margin-left: -59px;
+      box-sizing: border-box;
+      li{
+        float: left;
+        width: 85px;
+        height: 145px;
+        margin-left: 59px;
+        &.dd_01{
+          background: url("../img/area_dd/dd_01.png") no-repeat;
+        }
+        &.dd_02{
+          background: url("../img/area_dd/dd_02.png") no-repeat;
+        }
+        &.dd_03{
+          background: url("../img/area_dd/dd_03.png") no-repeat;
+        }
+        &.dd_04{
+          background: url("../img/area_dd/dd_04.png") no-repeat;
+        }
+        &.dd_05{
+          background: url("../img/area_dd/dd_05.png") no-repeat;
+        }
+        &.dd_06{
+          background: url("../img/area_dd/dd_06.png") no-repeat;
+        }
+        &.dd_07{
+          background: url("../img/area_dd/dd_07.png") no-repeat;
+        }
+        &.dd_08{
+          background: url("../img/area_dd/dd_08.png") no-repeat;
+        }
+        p{
+          width: 100%;
+          height: 100%;
+          a{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: -2px;
+            padding-top: 100px;
+          }
+        }
+      }
+    }
+  }
+  .sec6{
+    min-height: 700px;
+    padding: 50px 0 30px 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #efefef;
+    .all{
+      width: 75px;
+      display: inline;
+      top: -30px;
+      a{
+        text-indent: -10px;
+      }
+    }
+  }
+  .sec7{
+    .slide{
+      position: relative;
+      padding: 50px 0 50px 0;
+      border-top: #e9e9e9;
+      box-sizing: border-box;
+      .main_banner{
+        position: relative;
+        .mb_wrapper{
+          height: 122px;
+        }
+      }
+    }
+  }
+
+  footer{
+    .inner{
+      .footer_link{
+        height: 12px;
+        padding: 20px 0 0 ;
+        background: orange;
+      }
+    }
+}//wrap
+
+// 서울 소식
+.board_area1{
+  .news_soule{
+    width: 440px;
+    height: 200px;
+    .news_item_wrap{
+        overflow: hidden;
+        .n_item{
+          width: 440px;
+          height: 27px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          letter-spacing: -2px;
+          color: #555555;
+        }
+        .grenn{
+          font-weight: 400;
+        }
+      }
+    }
+  .sns_banner{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 195px;
+    margin-top: 15px;
+    margin-left: 22px;
+    background: url("../img/sns_list/bg_sns_list.jpg") no-repeat;
+    a.sns_list{
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 1.2;
+      padding: 10px 15px;
+      font-size: 22px;
+      font-weight: 700;
+      box-sizing: border-box;
+      color: #222222;
+      span{
+        display: inline-block;
+        position: relative;
+        padding-right: 50px;
+        color: #222;
+        font-size: $fontSizePrimary;
+        font-weight: 600;
+        letter-spacing: normal;
+        &::after{
+          content: '';
+          position: absolute;
+          top: -2px;
+          right: 0;
+          display: inline-block;
+          width: 34px;
+          height: 24px;
+          background: url("../img/sns_list/ico_sns_list.png") no-repeat -247px 0;
+          border-left: 1px solid #878787;
+          padding-right: 6px;
+        }
+      }
+    }
+    ul{
+      overflow: hidden;
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      width: 276px;
+      height: 40px;
+      margin-left: -138px;
+      li{
+        float: left;
+        margin: 0 3px;
+        a{
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: url("../img/sns_list/ico_sns_list.png") no-repeat;
+          text-indent: -9999em;
+          &.insta{
+            background-position: 0 0;
+          }
+          &.facebook{
+            background-position: -40px 0;
+          }
+          &.twitter{
+            background-position: -80px 0;
+          }
+          &.blog{
+            background-position: -120px 0;
+          }
+          &.youtube{
+            background-position: -160px 0;
+          }
+          &.kakao{
+            background-position: -200px 0;
+          }
+        }
+      }
+    }
+  }
+}
+//end 서울소식
+
+
+// footer
+footer{
+  border-top: 1px solid #d0d0d0;
+  width: $siteWidth;
+  margin: 0 auto;
+  .footer-link{
+    position: relative;
+    height: auto;
+    padding: 0;
+    ul{
+      position: absolute;
+      float: left;
+      padding: 15px 0;
+      li{
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &::before{
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          display: block;
+          width: 1px;
+          height: 14px;
+          margin-top: -6px;
+          background: #dcdcdc;
+        }
+        a{
+          font-size: $fontSizeDescription;
+          color: #636363;
+          &.policy{
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+    .sns{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      padding: 15px 0;
+      overflow: hidden;
+      font-size: 0;
+      text-align: center;
+      a{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        margin-left: 5px;
+        text-indent: -9999em;
+        background: url("../img/res_soule/icon_set_sns.png") no-repeat 0 0;
+        &.fb{
+          background-position: -25px 0;
+          &:hover{
+            background-position: -25px -24px;
+          }
+        }
+        &.tw{
+          background-position: -50px 0;
+          &:hover{
+            background-position: -50px -24px;
+          }
+        }
+        &.ist{
+          background-position: -75px 0;
+          &:hover{
+              background-position: -75px -24px;
+          }
+        }
+        &.ks{
+          background-position: -100px 0;
+          &:hover{
+              background-position: -100px -24px;
+          }
+        }
+        &.yt{
+          background-position: -125px 0;
+          &:hover{
+              background-position: -125px -24px;
+          }
+        }
+        &.bl{
+          background-position: -150px 0;
+          &:hover{
+              background-position: -150px -24px;
+          }
+        }
+      }
+    }
+  }
+  .siteAddr{
+    width: 100%;
+    margin-top: 60px;
+    position: relative;
+    padding: 22px 0;
+    float: left;
+    border-top: 1px solid #ccc;
+    .foo-logo{
+      margin-right: 40px;
+      float: left;
+      width: 108px;
+      height: 45px;
+      background: url("../img/res_soule/icon_set.png") no-repeat -180px 0;
+    }
+    .address{
+      width: 360px;
+      height: 18px;
+      display: inline-block;
+      letter-spacing: -2px;
+      vertical-align: top;
+      li{
+        display: block;
+        padding: 2px 0;
+        font-size: $fontSizeDescription;
+        color: #636363;
+      }
+    }
+    .mark{
+        position: absolute;
+        top: 20px;
+        right: 0;
+        padding: 0;
+        background: none;
+        li{
+          float: left;
+          margin-left: 10px;
+        }
+    }
+  }
+}
+
+//slider
+.swiper-pagination{
+  position: relative;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  &.main_page{
+    position: absolute;
+    text-align: right;
+
+    margin-top: 0;
+    margin-right: 10px;
+    color: #fff;
+  }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 14px;
+}
+
+
+// img 캡션
+figure{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  figcaption{
+    position: absolute;
+    z-index: 100;
+    text-align: left;
+    padding-left: 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    bottom: 0;
+    line-height: 50px;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    color: #f1f1f1;
+  }
+}
